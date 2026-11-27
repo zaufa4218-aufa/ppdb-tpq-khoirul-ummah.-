@@ -1,0 +1,82 @@
+/* Table.css */
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-xs);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--font-size-sm);
+  background: var(--white);
+}
+
+.table thead {
+  background: var(--sage-50);
+  border-bottom: 1.5px solid var(--color-border);
+}
+
+.table th {
+  padding: var(--space-3) var(--space-4);
+  font-weight: var(--font-weight-semibold);
+  color: var(--ink-light);
+  text-align: left;
+  font-size: var(--font-size-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.table td {
+  padding: var(--space-3) var(--space-4);
+  color: var(--color-text);
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: middle;
+}
+
+.table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.table tbody tr {
+  transition: background var(--transition-fast);
+}
+
+.table tbody tr:hover {
+  background: var(--sage-50);
+}
+
+/* === SKELETON === */
+.table-skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-4);
+}
+
+.skeleton-row {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.skeleton-cell {
+  height: 36px;
+  border-radius: var(--radius-sm);
+  flex: 1;
+  background: linear-gradient(90deg, var(--sage-50) 25%, var(--sage-100) 50%, var(--sage-50) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* === EMPTY === */
+.table-empty {
+  padding: var(--space-12);
+  text-align: center;
+  color: var(--muted);
+  font-size: var(--font-size-sm);
+  background: var(--white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}

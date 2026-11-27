@@ -1,0 +1,60 @@
+/* Card.css */
+.card {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  transition: box-shadow var(--transition-fast), transform var(--transition-fast);
+}
+
+/* === PADDING === */
+.card-pad-none { padding: 0; }
+.card-pad-sm   { padding: var(--space-4); }
+.card-pad-md   { padding: var(--space-6); }
+.card-pad-lg   { padding: var(--space-8); }
+
+/* === VARIANTS === */
+.card-default {
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+.card-default:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.card-elevated {
+  border: none;
+  box-shadow: var(--shadow-md);
+}
+.card-elevated:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+.card-outlined {
+  border: 1.5px solid var(--color-border);
+  box-shadow: none;
+}
+.card-outlined:hover {
+  border-color: var(--sage-300);
+}
+
+.card-soft {
+  background: var(--sage-50);
+  border: 1px solid var(--sage-100);
+  box-shadow: none;
+}
+
+/* === SUB-COMPONENTS === */
+.card-header {
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: var(--space-4);
+}
+
+.card-footer {
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-border);
+  margin-top: var(--space-4);
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-3);
+}

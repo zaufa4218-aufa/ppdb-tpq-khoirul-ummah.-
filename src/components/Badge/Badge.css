@@ -1,0 +1,79 @@
+/* Badge.css */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--radius-full);
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.badge-sm {
+  font-size: 11px;
+  padding: 3px 8px;
+}
+
+.badge-md {
+  font-size: var(--font-size-xs);
+  padding: 4px 10px;
+}
+
+.badge-lg {
+  font-size: var(--font-size-sm);
+  padding: 5px 12px;
+}
+
+.badge-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  flex-shrink: 0;
+}
+
+/* === STATUS VARIANTS === */
+.badge-draft {
+  background: var(--status-draft-bg);
+  color: var(--status-draft-text);
+}
+
+.badge-pending {
+  background: var(--status-pending-bg);
+  color: var(--status-pending-text);
+}
+
+.badge-fix {
+  background: var(--status-fix-bg);
+  color: var(--status-fix-text);
+}
+
+.badge-verified {
+  background: var(--status-verified-bg);
+  color: var(--status-verified-text);
+}
+
+.badge-accepted {
+  background: var(--status-accepted-bg);
+  color: var(--status-accepted-text);
+}
+
+.badge-rejected {
+  background: var(--status-rejected-bg);
+  color: var(--status-rejected-text);
+}
+
+.badge-info {
+  background: var(--info-bg);
+  color: var(--info);
+}
+
+.badge-sage {
+  background: var(--sage-100);
+  color: var(--sage-700);
+}
+
+.badge-gold {
+  background: var(--gold-100);
+  color: var(--gold-600);
+}
